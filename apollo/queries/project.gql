@@ -1,0 +1,17 @@
+query Project($id: ID!) {
+    project(id: $id) {
+        data {
+            id
+            attributes {
+                name
+                image {
+                    data {
+                        attributes {
+                            url
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
